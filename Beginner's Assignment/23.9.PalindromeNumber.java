@@ -1,13 +1,13 @@
 class Solution {
-    public int[] getConcatenation(int[] nums) {
-        int len = nums.length;
-        int[] res = new int[len*2];
-        int k=0;
-        for(int i=0;i<2;i++){
-            for(int j=0;j<len;j++){
-               res[k++]=nums[j]; 
-            }
+    public boolean isPalindrome(int x) {
+        int rev=0,temp=x;
+        while(temp>0){
+            rev=(rev*10)+temp%10;
+            temp=temp/10;
         }
-        return res;
+        if(x==rev){
+            return true;
+        }
+        return false;
     }
 }
