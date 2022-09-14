@@ -1,0 +1,17 @@
+Catalan Numbers 
+Cn = 2nCn/(n+1)
+
+Series=> 1,1,2,5,14,42,132
+
+Implementation 
+   ->Recursion
+   ->Dynamic Programming 
+   ->Binomial Cofficient
+   
+   
+   RECURSION
+   res=0;
+   for(i=0;i<n;i++){
+   res=res+Catalan(i)*Catalan(n-i-1);
+   }
+   
