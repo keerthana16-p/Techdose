@@ -1,3 +1,4 @@
+//Annagram => All letters in word is taken using those letters another word is created
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
         int[] phash = new int[26];
